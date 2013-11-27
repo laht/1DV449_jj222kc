@@ -1,0 +1,33 @@
+#Seminarium 2
+##1. Webbens framtid
+Jag tror att ju längre fram vi kommer ju mer kommer internet att användas. Om man tittar på utvecklingen fram till nu så har
+allting gått väldigt fort och jag tror inte att utvecklingen kommer stanna av än på ganska många år. Med det i tanke så tror jag att internet kommer bli en allt större del av människors liv, redan nu tar internet ganska stor plats hos människor, allt från att läsa tidningen till att kommunicera med släkt och vänner eller hantera bank ärenden. 
+
+Vi kommer säkert på ett mycket bredare sätt kunna hantera saker så som sjukvård och skola. När jag gick i grundskolan var det inte ens alla som hade en mobiltelefon, och att använda datorerna i skolan var endast för att skriva uppsatser. Med åren som gått så får fler och fler unga människor tillgång till en smartphone och datorer i skolorna. Något som kan användas som ett kraffult läromedel då det finns så mycket information att tillgå på internet. Inom vården kanske man kan se sina recept via nätet, få sjukhusresultat presenterade på ett helt annat sätt än tidigare, digitaliserade journaler för underlättat arbete mellan sjukhsu, eller till och med  få hjälp via internet.
+
+Jag som har intresse för spel hoppas verkligen på en mer lättspelad värld. Idag är det ändå rätt krångligt att köpa, installera, konfigurera och spela ett spel. Det tar mycket tid, ofta måste man ta sig iväg till affären för att köpa spelet och sedan är det inte alltid man med sina hemmadator har nog med kraf för att spela det allra nyaste spelen. Min förhoppning är då att man kommer kunna spela spel genom webbläsaren. Nu är det dock inte det smidigaste sättet att försöka driva vilka spel som helst genom en webbläsare, men redan idag finns det tjänster som tillåter någon slags cloudtjänst där alla spelen körs och sedan får man bilden till webbläsaren. Dessa tjänster är idag långt ifrån perfekta men i framtiden så kan nog denna typ av spelande vara ett bra alternativ till dagens relativt osmidiga spelsätt.
+
+Så länge som webben utvecklas så förändras den och då måste man anpassa sig som utvecklare, det gäller att leverera sådant som kunder är intresserad av. Det håller inte längre att t.ex. leverera en hemsida endast anpassad för internet explorer 6 och förväntat sig att bli hyllad. Man måste ständigt ta till sig nya tekniker att utveckla på och hålla sig uppdaterad på vad som händer, både som front- och back-end utvecklare. Med HTML5 sa man att flash inte längre skulle vara nödvändigt, med Ajax nu så kan man skapa mycket snygga lösningar på webbapplikationer så som one-page applications. Det kommer ständigt nya tekniker att arbeta med och det är så utvecklingen förs framå
+
+Om nu sådant som sjukhusuppgifter, resultat och journaler ska finnas tillgängligt via internet så kommer säkerhet vara A och O för den personliga integriteten. Redan idag kan den personliga vara utsatt och i ett samhälle som mer och mer använder internet så blir säkerheten viktigare och viktigare.
+
+###1.2 100% Webb
+100% webb låter, idag som någons slags önskedröm. I dagsläget tror jag inte att 100% webb skulle vara möjligt, det är alldeles för mycket tungdrivna applikationer som inte lätt skulle kunna migrera till att köras via molnet. Några som jag själv använder är t.ex. Adobe Photoshop, Adobe Illustrator,  Adobe Indesign, diverse 3d-mjukvaror och olika slags spel. Autodesk skaparen av 3d-mjukvaran 3ds max tillhandahåller idag en molnbaserad renderingstjänst som tillåter människor med mindre kraftfulla datorer att rendera via deras datorer för att snabbare få resultat. Detta tycker jag är ett steg i rätt riktning, att man i så stor mån som möjligt frigör användaren från att behöva sitta på extrema, dyra datorer som kan vara utsatta för inbrott, stöld eller att man råkar ha sönder dom. Om det nu var möjligt att arbeta med t.ex. photoshop via webben så skulle jag absolut göra det men jag tror inte att vi kommer få se det på några år.
+
+Om jag idag skulle vara tvungen att endast arbeta via en webbläsare så skulle jag inte kunna göra särskilt mycket av det jag normalt sett brukar spendera min tid med. Inte ens allt skolarbete tror jag skulle vara möjligt att utföra endast via en webbläsare. Nä jag tror att det är ett tag kvar tills 100% webb kommer vara ett realistiskt koncept.
+
+##2 Öppen data
+Öppen data innebär att så mycket information som möjligt ska finnas publikt tillgängligt till alla människor. Utom att sådan data som är skyddad på olika sätt som t.ex. personuppgiftslagen eller ligger under sekretess. 
+
+Med mer öppen data så kommer applikationsutveckling bli en helt annan sak. Om man kan komma på en idé så kan man sätta i gång och veta att om jag behöver data till något så finns den tillgänglig och redo att användas. Projektet jag gjorde i ettan för webteknisk introduktion gick ut på att skapa en vädersite. Då behövde vi såklart data att presentera på sidan och var då tvungen att vända oss till Yr.no då smhi inte delade ut sin data. I det fallet så hade det varit trevligt att kunna arbeta med den datan som sammaställts av sitt eget lands väderinstitut. Detta exempel var ju dock bara att skrapa på ytan, med så lättillgänglig data så öppnas en helt ny värld att skapa applikationer som använder datan, eller bara för att analysera datan.
+###2.1 Öppen Data i Sverige
+Om datan som finns under Mat och Dryck fanns tillgängligt på ett strukturerat sätt så kan man göra en mobilapplikation som visar alla tillgängliga restauranger och sedan kan peka ut dem på en karta. Detta är ju inte på något sätt något revolutionerande men ur ett diskussions syfte så är det något jag kan tänka mig som en möjlighet.
+
+Som tidigare nämnt så är det av stor vikt att inte öppna data som kan vara skadlig så som sekretesbelagd information eller personuppgifter.
+
+Ur ett PR perspektiv tycker jag det finns väldigt mycket fördelar med att en kommun delar ut sin data då man tillåter en viss transparens och inte håller undan något så framstår man på ett positivt sätt. Om det finns mycket information ute om en stad så kan det kanske stärka turism, eller om information om boendelägen är lätt att presentera så söker folk sig till staden om det finns möjligheter till boende.
+
+För medborgare så är det alltid fördelaktigt med lättilgänglig och tydlig information, att snabbt kunna ta reda på saker man är intresserad av är ofta en sak många har nytta av. Jag själv glömmer väldigt lätt saker om jag inte gör dom medan tanken slår mig, så om jag måste gräva genom 30 sidor med diverse otydlig information på en hemsida som inte är anpassad för mobiler så ger jag sannolikt upp och släpper tanken. 
+
+Det är ju oftast bra att veta mer än mindre, så konceptet öppen data ligger helt klart i allmänhetens bästa. 
+
