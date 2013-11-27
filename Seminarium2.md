@@ -29,5 +29,5 @@ Ur ett PR perspektiv tycker jag det finns väldigt mycket fördelar med att en k
 
 För medborgare så är det alltid fördelaktigt med lättilgänglig och tydlig information, att snabbt kunna ta reda på saker man är intresserad av är ofta en sak många har nytta av. Jag själv glömmer väldigt lätt saker om jag inte gör dom medan tanken slår mig, så om jag måste gräva genom 30 sidor med diverse otydlig information på en hemsida som inte är anpassad för mobiler så ger jag sannolikt upp och släpper tanken. 
 
-Det är ju oftast bra att veta mer än mindre, så konceptet öppen data ligger helt klart i allmänhetens bästa. 
+Det är ju oftast bra att veta mer än mindre, så konceptet öppen data kan absolut vara ett bra steg mot ett öppnare samhälle.
 
