@@ -34,6 +34,6 @@ Både SMHI och Google har relativt bra dokumentation över sina API:er och nyhet
 ###Exempel
 http://www.musicnectar.com/
 
-Musicnectar är en sida som använder sig av youtube och Last.fm för att bygga en helt ny sida som presenterar information om artister, album eller låtar och även spelar upp musik. Jag tycker att den här sidan är ett bra exempel på hur man genom att använda sig av API:er skapar en snygg ny lösning för hur man kan lyssna på musik och läsa om musik. Denna tjänst använder sig "bara" av
+Musicnectar är en sida som använder sig av youtube och Last.fm för att bygga en helt ny sida som presenterar information om artister, album eller låtar och även spelar upp musik. Jag tycker att den här sidan är ett bra exempel på hur man genom att använda sig av API:er skapar en snygg ny lösning för hur man kan lyssna på musik och läsa om musik. Denna tjänst använder sig "bara" av 2 API:er men jag tycker att det inte har så stor betydelse om resultatet blir en snygg/användbar applikation.
 ###Kombinerat resultat
 Det kombinerade resultatet av datakällorna blir en site som man både kan lyssna på musik och läsa om den. Det är inte direkt något revolutionerande men jag tycker att det är ett snyggt sätt att slå ihop två tjänster i en och presentera den på ett trevligt sätt. Det blir som en online musikspelare.
