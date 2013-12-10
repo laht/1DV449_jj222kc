@@ -6,8 +6,9 @@ En web/mobil applikation som talar om för användaren om det snöar där den be
 *   Google maps
 *   SMHI
 *   Geolocation
+
 ####Tankar
-####SMHI
+#####SMHI
 Hos SMHI finns det en mängd öppen data, dock så finns det viss data som ej är tillgänglig offentligt. Den datan går dock att beställa mot en kostnad. Jag kan dock inte läsa mig till vilken data som är exkluderad ur den öppna datan. Den öppna datan verkar vara väldigt omfattande så jag kan inte föreställa mig att jag skulle behöva något som inte finns tillgängligt. SMHIs API verkar således vara väldigt lättförstått och enkelt att använda. Mata in latitud och longitud så får du ut data för 10 dagar framöver. Dokumentationen var tillräckligt utförlig för att kunna nytja det som finns tillgängligt men allt var inte helt glasklart.
 
 #####Google maps
