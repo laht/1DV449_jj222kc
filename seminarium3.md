@@ -7,7 +7,7 @@ En web/mobil applikation som talar om för användaren om det snöar där den be
 *   SMHI
 *   Geolocation
 ####Tankar
-#####SMHI
+####SMHI
 Hos SMHI finns det en mängd öppen data, dock så finns det viss data som ej är tillgänglig offentligt. Den datan går dock att beställa mot en kostnad. Jag kan dock inte läsa mig till vilken data som är exkluderad ur den öppna datan. Den öppna datan verkar vara väldigt omfattande så jag kan inte föreställa mig att jag skulle behöva något som inte finns tillgängligt. SMHIs API verkar således vara väldigt lättförstått och enkelt att använda. Mata in latitud och longitud så får du ut data för 10 dagar framöver. Dokumentationen var tillräckligt utförlig för att kunna nytja det som finns tillgängligt men allt var inte helt glasklart.
 
 #####Google maps
@@ -15,10 +15,10 @@ Googles dokumentation är väldigt stor och det finns otroligt mycket att läsa 
 ####Dataformat
 Från SMHI kommer det JSON medan man kan välja mellan både XML och JSON hos Google maps.
 ####Krav, begränsningar och kostnader
-#####SMHI
+####SMHI
 SMHIs data är i stor del fri att använda hur som helst, dock så finns inte all den data dom tillhandahåller publikt. Det finns en tjänst att mot en kostnad beställa, de berättar dock inte vad det kan vara för data mer än "Beställ data, som du inte kan ladda ner via smhi.se, mot viss kostnad". Den öppna datan SMHI tillhandahåller ligger under licensvillkoren Creative commons Erkännande 2.5 SE denna licens innebär att man fritt får kopiera och distribuera deras äöppna data för både komersiella och icke komersiella verksamheter. Utöver detta så ska man inte lasta ner deras tjänster i onödan, de vill inte att man publicerar inaktuell data. SMHI vill alltså att man ska vara en god användare som inte missbrukar deras tjänster, om så vore fallet så är de beredda att stänga av enskilda IP-adresser.
 
-#####Google maps
+####Google maps
 Hos Google verkar den enda gränsen vara 25 000 "map loads" varje dag i 90 dagar. När man når den mängden map loads så måste man se till att antingen modifiera sin applikation så det blir färre än 25 000 map loads varje dag eller att man aktiverar en automatisk betalning för varje map load som hamnar över 25 000 och sist att man köper en Maps API företagslicens. Dock så kan Google göra ett avgörande om applikationen är i allmänhetens intresse lyfta denna begränsning. Sedan tillhandahåller Google en guide för att köpa större map loads kvot för den som är intresserad. Den högsta betalbara mängden  map loads varje dag är automatiskt 250 000 men det går att höja och sänka den som man vill, dock endast upp till 500 000 map loads varje dag. Är man ute efter ännu fler map loads så får man ta kontakt med Google så kan de höja begränsningarna ännu mer.
 
 ####Risker
