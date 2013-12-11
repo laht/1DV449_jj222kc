@@ -35,7 +35,7 @@ Om ett API förändras mycket så kan funktionalitet som finns just nu försvinn
 
 Google känns som ett väldigt stabilt API och kommer antagligen inte förändras på sådant sätt att den funktionaliteten jag är ute efter kommer försvinna eller förändras. 
 
-Något som kan vara farligt med Ebay är att det finns så fruktansvärt många auktioner där så om man inte ser upp med hur man gör sina sökningar så kan man lätt få ohanterligt mycket data. På ebay kan man göra väldigt specifika sökningar så om man inte håller sig till rätt kategorier när man söker så är det lätt att man får med saker som är helt irrelevanta. Sedan kan det vara svårt att avgöra vad som är rätt saker att hämta ut, speciellt om man hämtar många poster.
+Något som kan vara farligt med Ebay är att det finns så fruktansvärt många auktioner där så om man inte ser upp med hur man gör sina sökningar så kan man lätt få ohanterligt mycket data. På ebay kan man göra väldigt specifika sökningar så om man inte håller sig till rätt kategorier när man söker så är det lätt att man får med saker som är helt irrelevanta. Sedan kan det vara svårt att avgöra vad som är rätt saker att hämta ut, speciellt om man hämtar många poster. Något som kan vara svårt också är att avgöra om man vill ha ut någon könsbaserad produkt, t.ex. en tjejjacka eller en killjacka.
 
 Jag tycker alla 3 API:er har bra dokumentation och de presenterar nyheter för vad som förändras och så länge man håller koll bör man kunna undvika att ens applikationer helt plötsligt inte fungerar längre.
 ##Fallstudie
