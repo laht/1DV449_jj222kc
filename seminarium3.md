@@ -7,6 +7,7 @@ En web/mobil applikation som talar om för användaren om det snöar där den be
 *   SMHI
 *   Geolocation
 *   Ebay
+
 ####Tankar
 #####Ebay
 Ebays api är väldigt utförligt med tutorials och guider på hur man kan komma igång med sina projekt. Det är väldigt mycket funktionalitet som är dokumenterad men den är väldigt bra sorterad och det är lätt att läsa sig till det man är ute efter att göra. Till exempel så finns det en tutorial exakt beskriver proceduren för att göra en sökning via deras API, från att skaffa en API nyckel till hur man skriver själva koden. Detta är mycket tacksamt och förenklar alltid arbetat så jag tycker att Ebays API verkar mycket trevligt och det skulle säkert vara roligt att arbeta med.
