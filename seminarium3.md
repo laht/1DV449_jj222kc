@@ -1,7 +1,7 @@
 #Seminarium 3
 ##Projektidé
 ###Snöar det här?
-En web/mobil applikation som talar om för användaren om det snöar där den befinner sig just nu genom att hämta användarens position med geolocation och sedan hämta väderdata för den platsen och tiden. Om det nu snöar där man befinner sig så  
+En web/mobil applikation som talar om för användaren om det snöar där den befinner sig just nu genom att hämta användarens position med geolocation och sedan hämta väderdata för den platsen och tiden. Om det nu snöar där man befinner sig så kommer ett föslag på en vinterjacka upp.
 ####API:n
 *   Google maps
 *   SMHI
