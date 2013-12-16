@@ -11,7 +11,9 @@ if(isUser($u, $p)) {
 	sec_session_start();
 	$_SESSION['login_string'] = hash('sha512', "Come_On_You_Spurs" +$u); 
 	$_SESSION['user'] = $u;
-	header("Location: img/middle.php");
+	$_SESSION['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
+	$_SESSION['remoteAddr'] = $_SERVER['REMOTE_ADDR'];
+	header("Location: mess.php");
 }
 else {
 	// Too bad

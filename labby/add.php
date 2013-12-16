@@ -5,7 +5,7 @@
 */
 function addToDB($name, $message, $pid) {
 	$db = null;
-	
+
 	try {
 		$db = new PDO("sqlite:db.db");
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -13,12 +13,22 @@ function addToDB($name, $message, $pid) {
 	catch(PDOEception $e) {
 		die("Something went wrong -> " .$e->getMessage());
 	}
-	$q = "INSERT INTO messages (message, name, pid) VALUES('$message', '$name', '$pid')";
-	
+
+	$name = htmlentities($name);
+	$message = htmlentities($message);
+
+	$stmt = $db->prepare("INSERT INTO messages (message, name, pid) VALUES (:message, :name, :pid)");
+	$message = array(
+		'message' => $message, 
+			  'name' => $name, 
+			   'pid' => $pid
+	   	);
+
 	try {
-		if(!$db->query($q)) {
+		if(!$stmt->execute($message)) {
 			die("Fel vid insert");
 		}
+
 	}
 	catch(PDOException $e) {
 		die("Something went wrong -> " .$e->getMessage());

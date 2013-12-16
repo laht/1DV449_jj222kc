@@ -1,5 +1,5 @@
 <?php
-
+require_once("password.php");
 /**
 * Just som simple scripts for session handling
 */
@@ -15,17 +15,19 @@ function sec_session_start() {
         session_regenerate_id(); // regenerated the session, delete the old one.  
 }
 
+function validateSession() {
+	if ($_SESSION['userAgent'] != $_SERVER['HTTP_USER_AGENT']) {
+		header('HTTP/1.1 401 Unauthorized'); die();
+	}
+}
 function checkUser() {
 	if(!session_id()) {
 		sec_session_start();
 	}
-	//TA BORT, BORTKOMMENTERAD KOD 
-	//var_dump($_SESSION);
 	if(!isset($_SESSION["user"])) {header('HTTP/1.1 401 Unauthorized'); die();}
-	
 	$user = getUser($_SESSION["user"]);
 	$un = $user[0]["username"];
-	
+
 	if(isset($_SESSION['login_string'])) {
 		if($_SESSION['login_string'] !== hash('sha512', "Come_On_You_Spurs" + $un) ) {
 			header('HTTP/1.1 401 Unauthorized'); die(); // Yey!
@@ -38,7 +40,6 @@ function checkUser() {
 
 function isUser($u, $p) {
 	$db = null;
-
 	try {
 		$db = new PDO("sqlite:db.db");
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -46,7 +47,7 @@ function isUser($u, $p) {
 	catch(PDOEception $e) {
 		die("Del -> " .$e->getMessage());
 	}
-	$q = "SELECT id FROM users WHERE username = '$u' AND password = '$p'";
+	$q = "SELECT username, password FROM users WHERE username = '$u'";
 
 	$result;
 	$stm;	
@@ -59,8 +60,7 @@ function isUser($u, $p) {
 		echo("Error creating query: " .$e->getMessage());
 		return false;
 	}
-	
-	if($result)
+	if(password_verify($p, $result[0]["password"]) && $u == $result[0]["username"])
 		return true;
 	else
 	 	return false;
@@ -95,11 +95,11 @@ function getUser($user) {
 }
 
 function logout() {
-	//FIXA SÄKERHETSRRISK
 	if(!session_id()) {
 		sec_session_start();
 	}
-	session_end();
-	header('Location: index.php');
+	$_SESSION = array();
+	session_destroy();
+	echo "index.php";
 }
 
