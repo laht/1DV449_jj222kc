@@ -5,6 +5,9 @@
 */
 function addToDB($name, $message, $pid) {
 	$db = null;
+	$name = htmlentities($name);
+	$message = htmlentities($message);
+	$pid = htmlentities($pid);
 
 	try {
 		$db = new PDO("sqlite:db.db");
@@ -14,21 +17,12 @@ function addToDB($name, $message, $pid) {
 		die("Something went wrong -> " .$e->getMessage());
 	}
 
-	$name = htmlentities($name);
-	$message = htmlentities($message);
-
-	$stmt = $db->prepare("INSERT INTO messages (message, name, pid) VALUES (:message, :name, :pid)");
-	$message = array(
-		'message' => $message, 
-			  'name' => $name, 
-			   'pid' => $pid
-	   	);
+	$stmt = $db->prepare("INSERT INTO messages (message, name, pid) VALUES (:message, :name, :pid)");	
 
 	try {
-		if(!$stmt->execute($message)) {
+		if(!$stmt->execute(array('message' => $message, 'name' => $name, 'pid' => $pid))) {
 			die("Fel vid insert");
 		}
-
 	}
 	catch(PDOException $e) {
 		die("Something went wrong -> " .$e->getMessage());

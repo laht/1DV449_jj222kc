@@ -143,6 +143,10 @@ När en insert görs i databasen så används inte parametriserade frågor.
 
 Detta möjliggör SQL-injection.
 
-Om någon elak användare gör en SQL-injection så kan han droppa hela databasen.
+Om någon elak användare gör SQL-injections så kan han droppa hela databasen.
 
 Genom att använda parametriserade SQL-frågor och komma undan HTML så använder jag htmlentities och sedan exekveras frågan till databasen.
+
+##Ajax
+Jag löser detta problem genom hämta ut alla poster från databasen och sortera dom på serial så nyaste meddelanden hamnar längst upp i listan, sedan skriver jag ut dessa till klienten. När ett nytt meddelande läggs till så töms meddelandena från klienten och laddas in på nytt för att inkludera de nya meddelandet. 
+http://jocke.jmjldesign.se/webteknik2/labby/

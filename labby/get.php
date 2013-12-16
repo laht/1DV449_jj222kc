@@ -1,6 +1,6 @@
 <?php
 
-// get the specific message
+// get all messages for one producer from the database 
 function getMessage($nr) {
 	$db = null;
 
@@ -12,7 +12,8 @@ function getMessage($nr) {
 		die("Del -> " .$e->getMessage());
 	}
 	
-	$q = "SELECT * FROM messages WHERE serial = '$nr'";
+	//select and sort messages by serial
+	$q = "SELECT * FROM messages WHERE pid = '$nr' ORDER BY serial DESC" ;
 	
 	$result;
 	$stm;	
@@ -26,12 +27,12 @@ function getMessage($nr) {
 		return false;
 	}
 	
+	//return result objekt containing messages
 	if($result)
-		return $result[0];
+		return $result;
 	else
 	 	return false;
 }
-
 
 function getMessageIdForProducer($pid) {
 	$db = null;
