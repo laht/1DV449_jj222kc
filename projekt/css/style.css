@@ -1,0 +1,37 @@
+.jumbotron {
+	margin-top: 50px;
+	text-align: center;
+}
+.footer-bar{
+	background-color: rgb(44, 62, 80);
+	color: #fff;
+	border-bottom-color: rgb(32, 45, 59);
+	display: block;
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	height: 61px;
+	left: 0px;
+	min-height: 60px;
+	position: fixed;
+	right: 0px;
+	width: 1440px;
+	z-index: 1030;
+}
+.footer-bar p{
+	line-height: 21px;
+}
+.footer-bar .container{
+	line-height: 60px;
+}
+.red{
+	background-color: #df2e1b;
+	color: #fff;
+}
+.green{
+	background-color: #18bc9c;
+	color: #fff;	
+}
+.orange{
+	background-color: #f39c12;
+	color: #fff;	
+}
