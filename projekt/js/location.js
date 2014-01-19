@@ -22,6 +22,10 @@ var userLocation = {
 			var crd = pos.coords;
 			that.longitude = that.correctedCoords(crd.longitude);
 			that.latitude = that.correctedCoords(crd.latitude);
+
+			var repo = Object.create(storage);
+			repo.saveLat(that.longitude);
+			repo.saveLng(that.latitude);
 		}
 		//if unsuccessful log error
 		function error(err) {
@@ -104,7 +108,6 @@ var userLocation = {
 		}
 	}
 }
-
 
 
 

@@ -40,12 +40,15 @@ var weather = {
 	renderWeather: function(df) {
 		//determine the current weather and append it		
 		switch (df) {
+			//1 is snow
 			case 1:
 				$(".footer-bar").before("<div id='result' class='jumbotron green'>Japp!</div>");
 				break;
+			//2 there might be snow
 			case 2: 
 				$(".footer-bar").before("<div id='result' class='jumbotron orange'>Kanske!</div>");
 				break;
+			//anything else is not snow
 			default:
 				$(".footer-bar").before("<div id='result' class='jumbotron red'>Tyvärr!</div>");
 				break;
