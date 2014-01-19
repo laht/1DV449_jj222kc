@@ -14,7 +14,7 @@
 	min-height: 60px;
 	position: fixed;
 	right: 0px;
-	width: 1440px;
+	width: 100%;
 	z-index: 1030;
 }
 .footer-bar p{
@@ -34,4 +34,7 @@
 .orange{
 	background-color: #f39c12;
 	color: #fff;	
+}
+#city{
+	display: inline;
 }

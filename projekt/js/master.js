@@ -22,14 +22,3 @@ renderError = function(err) {
 		$("#error").append("<p>"+err+"</p>");
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
