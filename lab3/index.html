@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Lab3</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href="css/style.css">     
+  </head>
+  <body>
+    <div id="map-canvas">
+    </div>
+    <div id="filter-box">
+      <label for="roadtraffic">Vägtrafik</label>
+      <input type="checkbox" id="roadtraffic" name="roadtraffic"/>
+      <label for="publictransport">Kollektivtrafik</label>
+      <input type="checkbox" id="publictransport" name="publictransport"/>
+      <label for="planneddisturbance">Planerad störning</label>
+      <input type="checkbox" id="planneddisturbance" name="planneddisturbance"/>
+      <label for="misc">Övrigt</label>
+      <input type="checkbox" id="misc" name="misc"/>
+      <div id="filter-button">Filtrera</div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>   
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEPwcCqd8WvKxAz-qE8WcwyniXov8X4m4&sensor=true">
+    </script> 
+    <script type="text/javascript" src="js/sr.js"></script>
+    <script type="text/javascript" src="js/sort.js"></script>
+    <script type="text/javascript" src="js/master.js"></script>
+  </body>
+</html>
