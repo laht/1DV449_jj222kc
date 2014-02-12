@@ -38,3 +38,61 @@
 #city{
 	display: inline;
 }
+#snow, #weathers{
+	width: 49%;
+}
+#snow{
+	float: left;
+	margin-right: 15px;
+}
+#weathers{
+	float: right;
+	height: 400px;
+}
+#result{
+	float: left;
+	width: 49%;
+}
+.weather:nth-child(2n+1){
+	background: #e4e4e4;	
+}
+.weather{
+	padding-bottom: 10px;
+	margin-left: -60px;
+	margin-right: -60px;
+}
+.weather:first-child{
+	margin-top: -24px;
+}
+.weather .day, .temp{
+	font-size: 20px;
+	height: 30px;
+}
+h2{
+	width: 50%;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: -10px;
+}
+.symbol {
+	float: right;
+	margin-top: -65px;
+	margin-right: 145px;
+}
+.symbol img{
+	max-width: 50px;
+}
+.snow-day {
+	float: left;
+	width: 100%;
+	margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+

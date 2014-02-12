@@ -1,0 +1,36 @@
+Inledning
+Jag har skrivit en applikation som i grund och botten talar om för användaren hur vida det snöar där personen bifinner sig för tillfället. Genom att använda geolocation, SMHIs API och google maps API, så tas användarens position, stadens namn och det nuvarande vädret fram och presenteras på ett lättförstått sätt. 
+
+Serversida
+Min applikation är endast skriven med javascript och har således ingen serversida.
+
+Klientsida
+Min applikation består av 3 nödvändiga delar för att fungera, väderdata från SMHI, positiondata från geolocation och kartdata från google maps. Först och främst sker ett anrop till geolocation för att hämta användarens koordinater, sedan användes dessa koordinader för att hämta både väder- och kartdata från SMHI och Google maps. Resultatet av ajaxaanropen analyseras och presenteras för användaren. 
+
+Applikationen är helt skriven med javascript och använder jQuery för generell underlättning och ett bibliotek från codehelper för att ta fram användarens ip-adress. 
+
+Utöver cachning på javascript och css så cachas användarens ip-adress och namnet på staden som användaren befinnde sig på under senaste besöket. Besöker användaren sidan från samma ip-adress så sker inget anrop till google maps, utan stadens namn hämtas ur localstorage. 
+
+Gränssnittsmässigt så använder jag en bootswatch för att dit css.
+
+Egenreflektion
+Överlag tycker jag projektet har gått bra och jag har inte stött på några problem utöver vad man kan förvänta sig. Det var inte jättesmidigt att jobba mot SMHIs API då man fick väldigt mycket data, speciellt när jag bara behövde data för just den aktuella timmen. Google maps api gav inte något direkt sätt att hämta ut stadens namn och jag fick med ganska mycket onödig data.
+
+Jag tänkte från början lägga implementera en funktion som presenterade en annons från ebay för vinterartiklar om fallet var så att det snöade. Men jag valde att inte göra det för jag tyckte det blev för plojjigt. Jag tänkte istället göra så att vore möjligt att välja mellan olika typer av nederbörd, jag hann dock inte med detta vilket jag tycker är synd. 
+
+Risker
+Något jag märkte av var att under loppet av en vecka så hade något förändras på googles api och sättet jag plockade ut en stads namn på fungerade inte längre så jag fick ändra det. Som jag nämde tidigare hittade jag inget bra sätt att ta fram namnet på. SMHI har annonserat att deras API kommer att förändras under början av 2014, hur det kommer påverka mitt projekt vet jag inte.
+
+Användarens ip och stad lagras i klienten i klartext, jag vet dock inte hur detta kan utnyttjas. Om någon skulle få tag på användarens localstorage för mitt projekt skulle den möjligtvis kunna kartlägga alla ställen personen befunnit sig på vilket inte direkt främjar den personliga integriteten, detta känns dock väldigt långsökt. 
+
+Eftersom min kod finns tillgänglig att läsa för alla som går in på sidan så skulle vem som helst kunna ta mina ajax-anrop och missbruka dom, men eftersom jag inte använder någon autentisering för att göra dessa anrop så är detta inget som skulle drabba mig personligen. 
+
+Några etiska risker kan jag inte direkt identifiera, någon som eventuellt skulle kunna vara "kränkande" på något sätt vore väl geolocation, men eftersom användaren måste acceptera detta så tycker jag inte att det räknas. Något annat är användarens position och ip som lagras, dock i klienten och den är endast persistent så länge användaren inte byter ip-adress, då både position och ipdatan rensas och ersätts.
+
+Betyg
+Jag känner inte direkt att jag har något som är betygshöjande, jag siktade på betyg 3 och det är förhoppningsvis på den nivån jag lagt mig. Något som jag däremot tycker är betygsstärkande är att jag genom att använda localstorage och jämföra ip-adresser så kan jag reducera antalet ajax-anrop med hälften och inte behöva använda geolocation som är ganska långsamt. 
+
+Jag har fösrökt applicera DRY och seperation of concerns så långt jag kunnat och skrivit en lättläst och ren kod utan långa metoder.
+
+Slutsats
+Mitt projekt har flutit på ganska bra, men då det har varit mycket att göra har jag inte hunnit riktigt riktigt så långt som jag hoppades. Den ser inte så mycket ut för världen, men jag tycker att min app gör det den ska på ett snyggt och framför allt tydligt sätt. En väderapp med en tvist.

@@ -10,20 +10,27 @@
   </head>
   <body>
     <div class="container" id="main">
-      <div class="jumbotron">
+      <div id="headers">
+        <h2>Snöar det?</h2>
+        <h2>Femdygnsprognos</h2>
+      </div>
+      <div class="jumbotron" id="snow">
         Snöar det i
         <div id="city">
           ...
         </div>
       </div>
-      <div class="footer-bar">
-        <div class="container">
-          © 2014 Joakim Jonsson | 100% osäker väderdata
-        </div>
-      </div>  
+      <div class="jumbotron" id="weathers">
+        
+      </div>      
     </div>
-    <script language="Javascript" src="http://www.codehelper.io/api/ips/?js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <div class="footer-bar">
+      <div class="container">
+        © 2014 Joakim Jonsson | 100% osäker väderdata
+      </div>
+    </div>  
+    <!--<script language="Javascript" src="http://www.codehelper.io/api/ips/?js"></script>-->
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/weather.js"></script>
     <script type="text/javascript" src="js/location.js"></script>
     <script type="text/javascript" src="js/storage.js"></script>

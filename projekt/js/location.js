@@ -59,21 +59,22 @@ var userLocation = {
 	//See if user's location is changed
 	validateLocation: function(repo) {	
 		//get ip from localstorage
-		var lastIp = repo.getIp();
+		//var lastIp = repo.getIp();
 		//get current ip
-		var currentIp = codehelper_ip.IP;
-		if (lastIp === currentIp) {
+		//var currentIp = codehelper_ip.IP;
+		/*if (lastIp === currentIp) {
 			return true;
 		}
 		else {
 			return false;
-		}
+		}*/
+		return false;
 
 	},
 	//save current Ip and location to localstorage
 	saveLocation: function(loc, repo) {
 		repo.saveLocation(loc);
-		repo.saveIp(codehelper_ip.IP);
+		//repo.saveIp(codehelper_ip.IP);
 	},
 	//validate status code
 	checkStatusCode: function(data, repo) {
@@ -91,6 +92,7 @@ var userLocation = {
 	//append users city to dom
 	renderName: function(name) {
 		$("#city").html(name+"?");
+		$("h2").last().append(" för "+name);
 	},
 	//reduce coords to 2 decimal float
 	correctedCoords: function(c) {
