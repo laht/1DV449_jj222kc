@@ -1,2 +1,0 @@
-Inledning
-Jag har skrivit en applikation som i grund och botten talar om för användaren hur vida det snöar där personen bifinner sig för tillfället. Genom att använda geolocation, SMHIs API och google maps API, så tas användarens position, stadens namn och det nuvarande vädret fram och presenteras på ett lättförstått sätt. 
